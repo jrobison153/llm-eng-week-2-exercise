@@ -3,9 +3,10 @@
  * @param initialValue - The initial boolean value
  * @returns An object containing the current value and a toggle function
  */
-export function useToggle(
-  initialValue = false
-): { value: boolean; toggle: () => void } {
+export function useToggle(initialValue = false): {
+  value: boolean;
+  toggle: () => void;
+} {
   const [value, setValue] = useState(initialValue);
 
   const toggle = useCallback(() => {
@@ -16,4 +17,3 @@ export function useToggle(
 }
 
 import { useState, useCallback } from 'react';
-

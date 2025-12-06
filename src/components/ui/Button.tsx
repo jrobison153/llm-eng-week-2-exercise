@@ -22,7 +22,10 @@ export function Button({
   const variantStyles = getVariantStyles(variant);
 
   return (
-    <button onClick={onClick} className={`${baseStyles} ${variantStyles} ${className}`}>
+    <button
+      onClick={onClick}
+      className={`${baseStyles} ${variantStyles} ${className}`}
+    >
       {children}
     </button>
   );
@@ -39,4 +42,3 @@ function getVariantStyles(variant: 'primary' | 'secondary'): string {
   }
   return 'bg-gray-600 hover:bg-gray-700';
 }
-

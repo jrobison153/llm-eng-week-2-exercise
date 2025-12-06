@@ -23,16 +23,16 @@ function App(): JSX.Element {
           <div className="rounded-lg bg-gray-800 p-8 shadow-lg">
             <h2 className="mb-4 text-2xl font-semibold">Counter Example</h2>
             <p className="mb-4 text-lg">Count: {count}</p>
-            <div className="flex gap-4 justify-center">
+            <div className="flex justify-center gap-4">
               <button
                 onClick={() => setCount((c) => c + 1)}
-                className="rounded bg-blue-500 px-4 py-2 font-semibold text-white hover:bg-blue-600 transition-colors"
+                className="rounded bg-blue-500 px-4 py-2 font-semibold text-white transition-colors hover:bg-blue-600"
               >
                 Increment
               </button>
               <button
                 onClick={() => setCount(0)}
-                className="rounded bg-gray-600 px-4 py-2 font-semibold text-white hover:bg-gray-700 transition-colors"
+                className="rounded bg-gray-600 px-4 py-2 font-semibold text-white transition-colors hover:bg-gray-700"
               >
                 Reset
               </button>
@@ -49,4 +49,3 @@ function App(): JSX.Element {
 }
 
 export default App;
-

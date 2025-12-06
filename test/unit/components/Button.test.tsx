@@ -28,10 +28,13 @@ describe('Button', () => {
   });
 
   it('should apply secondary variant styles when specified', () => {
-    render(<Button onClick={() => {}} variant="secondary">Secondary</Button>);
+    render(
+      <Button onClick={() => {}} variant="secondary">
+        Secondary
+      </Button>
+    );
     const button = screen.getByText('Secondary');
 
     expect(button.className).toContain('bg-gray-600');
   });
 });
-
