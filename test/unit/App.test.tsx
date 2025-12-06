@@ -39,4 +39,3 @@ describe('App', () => {
     expect(screen.getByText(/Count: 0/i)).toBeInTheDocument();
   });
 });
-
